@@ -1,0 +1,146 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "user1",
+            "password": "password1"
+        },
+        {
+            "id": 2,
+            "username": "user2",
+            "password": "password2"
+        },
+        {
+            "id": 3,
+            "username": "user3",
+            "password": "password3"
+        },
+        {
+            "id": 4,
+            "username": "user4",
+            "password": "password4"
+        },
+        {
+            "id": 5,
+            "username": "user5",
+            "password": "password5"
+        },
+        {
+            "id": 6,
+            "username": "user6",
+            "password": "password6"
+        },
+        {
+            "id": 7,
+            "username": "user7",
+            "password": "password7"
+        },
+        {
+            "id": 8,
+            "username": "user8",
+            "password": "password8"
+        },
+        {
+            "id": 9,
+            "username": "user9",
+            "password": "password9"
+        },
+        {
+            "id": 10,
+            "username": "user10",
+            "password": "password10"
+        }
+    ],
+    "table-data": [
+        {
+            "username": "johndoe",
+            "phone": "+7(123)456-7890",
+            "email": "johndoe@gmail.com"
+        },
+        {
+            "username": "janedoe",
+            "phone": "+7(123)456-7891",
+            "email": "janedoe@gmail.com"
+        },
+        {
+            "username": "bobsmith",
+            "phone": "+7(123)456-7892",
+            "email": "bobsmith@gmail.com"
+        },
+        {
+            "username": "sarajones",
+            "phone": "+7(123)456-7893",
+            "email": "sarajones@gmail.com"
+        },
+        {
+            "username": "michaelbrown",
+            "phone": "+7(123)456-7894",
+            "email": "michaelbrown@gmail.com"
+        },
+        {
+            "username": "elizabethsmith",
+            "phone": "+7(123)456-7895",
+            "email": "elizabethsmith@gmail.com"
+        },
+        {
+            "username": "davidwilson",
+            "phone": "+7(123)456-7896",
+            "email": "davidwilson@gmail.com"
+        },
+        {
+            "username": "jenniferlee",
+            "phone": "+7(123)456-7897",
+            "email": "jenniferlee@gmail.com"
+        },
+        {
+            "username": "robertgarcia",
+            "phone": "+7(123)456-7898",
+            "email": "robertgarcia@gmail.com"
+        },
+        {
+            "username": "amandasmith",
+            "phone": "+7(123)456-7899",
+            "email": "amandasmith@gmail.com"
+        },
+        {
+            "username": "williamtaylor",
+            "phone": "+7(123)456-7900",
+            "email": "williamtaylor@gmail.com"
+        },
+        {
+            "username": "gracewang",
+            "phone": "+7(123)456-7901",
+            "email": "gracewang@gmail.com"
+        },
+        {
+            "username": "jamesdavis",
+            "phone": "+7(123)456-7902",
+            "email": "jamesdavis@gmail.com"
+        },
+        {
+            "username": "elijahjones",
+            "phone": "+7(123)456-7903",
+            "email": "elijahjones@gmail.com"
+        },
+        {
+            "username": "sophiamiller",
+            "phone": "+7(123)456-7904",
+            "email": "sophiamiller@gmail.com"
+        },
+        {
+            "username": "ryansmith",
+            "phone": "+7(123)456-7905",
+            "email": "ryansmith@gmail.com"
+        },
+        {
+            "username": "annalopez",
+            "phone": "+7(123)456-7906",
+            "email": "annalopez@gmail.com"
+        },
+        {
+            "username": "jonathangreen",
+            "phone": "+7(123)456-7907",
+            "email": "jonathangreen@gmail.com"
+        }
+    ]
+}
