@@ -37,6 +37,12 @@ Install dependencies
   npm install
 ```
 
+Install server
+
+```bash
+  npx http-server -o
+```
+
 Start the server
 
 ```bash
