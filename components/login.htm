@@ -1,0 +1,34 @@
+<div class="login-page">
+    <div class="art-container">
+        <div class="callout">
+            <h1><bold>Digital</bold> Platform <br> for distance <bold>learning</bold></h1>
+            <p>Internet and online based digital technologies such as desktop computers, mobile phones and other</p>
+        </div>
+        <img src="./images/login-art-1.svg" alt="Login page" class="art-img">
+    </div>
+    <div class="form-container">
+        <form class="form" name="loginForm" novalidate ng-app="formValidation">
+            <div class="form-heading">
+                <img src="./images/logo.png" alt="Logo" class="logo">
+                <img src="./images/lock.svg" alt="Lock" class="lock">
+                <h3>Welcome back</h3>
+            </div>
+            <div class="form-group">
+                <img src="../images/user.svg" alt="Username"/>
+                <input type="text" class="form-control" placeholder="Username" name="username" ng-model="user.username" required/>
+            </div>
+            <div class="form-group password" ng-class="{'error': loginForm.password.$invalid && loginForm.password.$dirty, 'success': loginForm.password.$valid}">
+                <img src="../images/lock-2.svg" alt="password"/>
+                <input type="password" class="form-control" placeholder="Password" name="password" ng-model="user.password" ng-minLength="8" ng-pattern="validation" required/>
+                <p class="help-block" ng-if="loginForm.password.$invalid && loginForm.password.$dirty">
+                    <img src="./images/warning.svg" alt="warning">
+                    Please enter atleast 8 character with number, symbol, capital and small letter
+                </p>
+            </div>
+            <a href="#" class="password-reset">Forgot password?</a>
+            <button onclick="window.location.href='#!table'" class="btn btn-default pull-right" ng-class="{'error': loginForm.password.$invalid && loginForm.password.$dirty && loginForm.username.$invalid, 'success': loginForm.password.$valid && loginForm.username.$valid}" ng-disabled="loginForm.username.$invalid || loginForm.password.$invalid">Login</button>
+            
+            <p class="signup-link">Don’t have an Account? <a href="#">Sign Up</a></p>
+        </form>
+    </div>
+</div>

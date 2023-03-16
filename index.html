@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="directory">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD app</title>
-</head>
-<body>
+
+    <link rel="stylesheet" href="./styles/main.css">
     
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./node_modules/angular-route/angular-route.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body ng-controller="directory-app">
+    <div ng-view>
+    </div>
 </body>
 </html>

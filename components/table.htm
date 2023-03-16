@@ -1,0 +1,48 @@
+<div class="header"><img src="../images/logo.png" alt="logo"></div>
+
+<div class="directory-head">
+    <p>Lorem ipsum is a dummy text</p>
+    <button class="bulk-delete" ng-class="{ 'active': selectedCount > 0 }" ng-click="bulkDelete()">Delete</button>
+</div>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th><input type="checkbox" class="select-all" ng-model="selectAll" ng-change="toggleAll()"></th>
+        <th ng-repeat="column in columns">
+            {{ column.name }}
+            <img src="../images/sort.svg" class="sort" alt="sort" 
+                ng-click="sortBy(column.field)" 
+                ng-class="{ 'sort-asc': sortField === column.field && !sortReverse, 'sort-desc': sortField === column.field && sortReverse }"
+            />
+        </th>
+        <th>Options</th>
+      </tr>
+    </thead>
+    <tbody ui-sortable ng-model="tableData">
+      <tr ng-repeat="row in tableData | orderBy:sortField:sortReverse" ng-class="{ 'selected': row.selected }">
+        <td><input type="checkbox" class="select-contact" ng-model="row.selected" ng-change="toggleSelection()"></td>
+        <td>{{ row.username }}</td>
+        <td>{{ row.phone }}</td>
+        <td>{{ row.email }}</td>
+        <td>
+            <button class="delete-contact" ng-click="deleteRow(row)"><img src="../images/delete.svg" alt="delete"></button>
+            <button class="move-contact" ui-sortable-handle><img src="../images/drag.svg" alt="move"></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="hide" id="confirmDelete">
+  <div class="innerContainer">
+    <img src="../images/warning-2.svg" alt="warning" />
+    
+    <div class="btnContainer">
+      <p>Are you sure want to delete?</p>
+  
+      <button class="delete-confirm" ng-click="deleteContact()">Yes</button>
+      <button class="delete-cancel" ng-click="deleteCancel()">Cancel</button>
+    </div>
+  </div>
+</div>
